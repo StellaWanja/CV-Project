@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    max-width: 100%;
+    color: #2b2e4a;
+}
+
+/* app.js styling */
+.app{
+    margin: 3rem;
+}
+
+.header{
+    text-align: center;
+}
+
+.header button{
+    background-color: #2b2e4a;
+    color: #fff;
+    padding: 0.8em;
+    border-radius: 0.8em;
+    margin: 0.8em 0 0.8em 0;
+    font-size: 1em;
+    cursor: pointer;
+    outline: 0;
+}
+
+.header button:hover{
+    opacity: 0.8;
+}
+
+/* form.js styling */
+h2{
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+}
+
+input:focus{
+    outline: none;
+    background-color: white;
+}
+
+/* number field remove spin buttons */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* end */
+
+.gen-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.gen-info label{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.gen-info input{
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 3px solid #e84545;
+}
+
+.previewStyle{
+    display: none;
+}
+
+/* preview.js styling */
+.preview-section{
+    margin: 2rem;
+}
+
+.profile-img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-image: url('./img/img-user.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 8px solid #2b2e4a;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+.title .color-span{
+    color: #e84545;
+}
+
+.title p{
+    font-weight: 500;
+}
+
+.title p span{
+    text-transform: lowercase;
+}
+
