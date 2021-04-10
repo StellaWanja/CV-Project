@@ -14,7 +14,11 @@ class App extends React.Component{
       professionTitle: "",
       email: "",
       phoneNumber: "",
-      uploadFile: null
+      uploadFile: null,
+      jobPosition:"",
+      company:"",
+      city:"",
+      respoTextArea: ""
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -56,21 +60,12 @@ class App extends React.Component{
     // toggle between preview and edit mode
     if(this.state.isPreview){
       content = <Preview 
-                  firstName= {this.state.firstName}
-                  lastName={this.state.lastName}
-                  professionTitle={this.state.professionTitle}
-                  email={this.state.email}
-                  phoneNumber={this.state.phoneNumber}
-                  uploadFile={this.state.uploadFile}
+                  previewData={this.state}
       />
     } else {
       content = <Form 
                   handleChange={this.handleChange}
-                  firstName= {this.state.firstName}
-                  lastName={this.state.lastName}
-                  professionTitle={this.state.professionTitle}
-                  email={this.state.email}
-                  phoneNumber={this.state.phoneNumber}
+                  formData={this.state}
                 />
     }
 

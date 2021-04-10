@@ -5,15 +5,19 @@ function Preview(props) {
     return (
         <div className='preview-section'>
             <div className='profile-img'>
-                <img src={props.uploadFile} alt=''/>
+                <img src={props.previewData.uploadFile} alt=''/>
             </div>
 
-            <div className='title'>
-               <h1>{props.firstName} <span className='color-span'>{props.lastName}</span></h1>
-               <h3>{props.professionTitle}</h3>
-               <p><span>{props.email}</span></p>
-               <p>{props.phoneNumber}</p>
+            <div className='gen-section'>
+               <h1>{props.previewData.firstName} <span className='color-span'>{props.previewData.lastName}</span></h1>
+               <h3>{props.previewData.professionTitle}</h3>
+               <p><span>{props.previewData.email}</span></p>
+               <p>{props.previewData.phoneNumber}</p>
             </div>      
+
+            <div className='work-section'>
+                <div></div>
+            </div>
         </div>
     )
 }

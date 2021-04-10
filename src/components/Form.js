@@ -10,7 +10,7 @@ function Form(props){
                 <input 
                   name='firstName'   
                   type='text'
-                  value={props.firstName}     
+                  value={props.formData.firstName}     
                   placeholder='Enter your first name' 
                   onChange={props.handleChange}       
                 />
@@ -19,7 +19,7 @@ function Form(props){
                 <input 
                   name='lastName'  
                   type='text' 
-                  value={props.lastName}     
+                  value={props.formData.lastName}     
                   placeholder='Enter your last name' 
                   onChange={props.handleChange}       
                 />
@@ -28,7 +28,7 @@ function Form(props){
                 <input 
                   name='professionTitle'  
                   type='text' 
-                  value={props.professionTitle}     
+                  value={props.formData.professionTitle}     
                   placeholder='Enter your professional title' 
                   onChange={props.handleChange}       
                 />
@@ -38,7 +38,7 @@ function Form(props){
                 <input 
                   name='email'
                   type='email'   
-                  value={props.email}     
+                  value={props.formData.email}     
                   placeholder='Enter your email' 
                   onChange={props.handleChange}       
                 />
@@ -47,7 +47,7 @@ function Form(props){
                 <input 
                   name='phoneNumber'   
                   type='number'
-                  value={props.phoneNumber}     
+                  value={props.formData.phoneNumber}     
                   placeholder='Enter your phone number' 
                   onChange={props.handleChange}       
                 />
@@ -56,6 +56,45 @@ function Form(props){
                 <input 
                   type='file'
                   onChange={props.handleChange}       
+                />
+              </div>
+
+              <div className='exp-info'>
+                <h2>Work Experience</h2>
+
+                <label>Job Position: </label>
+                <input 
+                  name='jobPosition'   
+                  type='text'
+                  value={props.formData.jobPosition}     
+                  placeholder='Enter your position' 
+                  onChange={props.handleChange}       
+                />
+
+                <label>Company: </label>
+                <input 
+                  name='company'   
+                  type='text'
+                  value={props.formData.company}     
+                  placeholder='Enter the company' 
+                  onChange={props.handleChange}       
+                />
+
+                <label>City: </label>
+                <input 
+                  name='city'   
+                  type='text'
+                  value={props.formData.city}     
+                  placeholder='Enter the city' 
+                  onChange={props.handleChange}       
+                />
+
+                <label>Responsibilities: </label>
+                <textarea 
+                  name='respoTextArea'
+                  value={props.formData.respoTextArea}
+                  placeholder='Enter the responsibilities'
+                  onChange={props.handleChange}
                 />
 
               </div>

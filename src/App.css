@@ -91,7 +91,7 @@ input[type=number] {
     background-image: url('./img/img-user.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 8px solid #2b2e4a;
+    /* border: 8px solid #2b2e4a; */
 }
 
 .profile-img img{
@@ -100,21 +100,21 @@ input[type=number] {
     object-fit: cover;
 }
 
-.title{
+.gen-section{
     text-align: center;
     text-transform: capitalize;
     margin-top: 1rem;
 }
 
-.title .color-span{
+.gen-section .color-span{
     color: #e84545;
 }
 
-.title p{
+.gen-section p{
     font-weight: 500;
 }
 
-.title p span{
+.gen-section p span{
     text-transform: lowercase;
 }
 
